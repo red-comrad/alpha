@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    .content{
+        display: flex;
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    .logo{
+        position: relative;
+    }
+    .nav{
+        display: flex;
+    }
+}

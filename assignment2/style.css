@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(65, 68, 74);
+}
+
+.container {
+    padding: 4rem;
+}
+
+.container>* {
+    margin: 10px;
+}
+
+.hollow-white-border {
+    color: rgb(65, 68, 74, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.container-heading {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.container-heading>h1 {
+    color: white;
+    position: relative;
+}
+
+.no-background {
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.circle {
+    position: absolute;
+    left: -50px;
+    top: -30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(189, 56, 32);
+}
+
+.container-body {
+    display: flex;
+}
+
+.container-body>* {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.container-body-content {
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 20px;
+}
+
+.container-body-content > * {
+    padding: 5px 10px;
+}
+
+.content-name {
+    font-size: 0.9rem;
+}
+
+.content-foot {
+    font-size: 0.9rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.content-foot:after {
+    content: "";
+    position: absolute;
+    border: 1px solid black;
+    border-color: rgb(189, 56, 32);
+    width: 100%;
+    bottom: 0px;
+}
+
+.content-foot>a {
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .container-body{
+        flex-direction: column;
+    }
+}

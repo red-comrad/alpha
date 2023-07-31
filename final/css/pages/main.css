@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+.container .content {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .logo {
+  position: relative;
+}
+.header .nav {
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */

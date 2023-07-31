@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px 10%;
+    background: url(https://tpc.googlesyndication.com/simgad/13819017744080435628);
+}
+
+.row{
+    display: flex;
+    flex: 1;
+}
+
+
+.border-onleft{
+    border-left: 1px solid black;
+}
+
+.border-onbottom{
+    border-bottom: 1px solid black;
+}
+
+.card{
+    border: 1px solid black;
+    border-width: 1px 1px 0px 0px;
+    flex: 1;
+    min-width: 200px;
+    padding-bottom: 60px;
+    transition-duration: 500ms;
+}
+
+.is-relative{
+    position: relative;
+}
+
+
+.heading{
+    position: relative;
+    background-color: rgb(0, 0, 0, 0.0);
+    white-space: nowrap;
+    margin: 40% 0 0 20%;
+}
+
+.circle{
+    position: absolute;
+    background-color: rgb(70, 154, 185);
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.small{
+    font-size: 0.9rem;
+    height: 70px;
+    display: block;
+    align-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.large{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.transparent{
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.hollow-white-border {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.fade{
+    color: rgb(0, 0, 0, 0.65);
+}
+
+.link{
+    text-decoration: underline;
+}
+
+.content-header{
+    font-size: 1.5rem;
+}
+
+.content-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.padded-tb-30{
+    padding: 30px 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .row{
+        flex-direction: column;
+    }
+}
