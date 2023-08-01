@@ -43,7 +43,7 @@ html {
                 display: flex;
                 justify-content: center;
                 .content-text-row-card{
-                    padding: 1em;
+                    padding: 1.5em;
                 }
             }
         }
@@ -122,6 +122,10 @@ html {
     background: linear-gradient(45deg, #E14B32, #3787C8);
 }
 
+.bg-yellowish{
+    background-color: #FAAF41;
+}
+
 .shape-lower-triangle {
     display: inline-block;
     position: relative;
@@ -187,7 +191,7 @@ html {
     color: #E14B32;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 700px) {
     .nav {
         flex-direction: column;
     }
