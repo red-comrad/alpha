@@ -44,10 +44,17 @@ html {
                 justify-content: center;
                 .content-text-row-card{
                     display: flex;
-                    justify-content: right;
+                    justify-content: space-evenly;
                     .content-text-row-card-sub-card{
                         width: 200px;
+                        text-align: center;
                         aspect-ratio: 1/1;
+                        .index{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
@@ -230,6 +237,14 @@ html {
 
 .color-redish-yellow{
     color: #E14B32;
+}
+
+.color-yellowish{
+    color: #FAAF41;
+}
+
+.color-bluish{
+    color: #3787C8;
 }
 
 .font-white{
