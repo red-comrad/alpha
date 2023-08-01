@@ -47,6 +47,13 @@ html {
                 }
             }
         }
+        img{
+            width: 100%;
+        }
+    }
+    .thin{
+        flex-basis: 0;
+        flex-grow: 0.2;
     }
 }
 
@@ -70,6 +77,10 @@ html {
     color: rgb(0, 0, 0, 0);
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
+}
+
+.stroke-white{
+    -webkit-text-stroke-color: white;
 }
 
 .medium {
@@ -186,10 +197,83 @@ html {
     flex-direction: column;
 }
 
+.is-float-right{
+    float: right;
+}
+
 
 .color-redish-yellow{
     color: #E14B32;
 }
+
+.font-white{
+    color: white !important;
+}
+
+.std-button{
+    background-color: rgb(0, 0, 0, 0);
+    border: 1px solid #FAAF41;
+    font-size: 1.3rem;
+    padding: 10px 30px;
+    width: fit-content;
+    align-self: center;
+    color: black;
+    border-radius: 5px;
+}
+
+.form-row{
+    display: flex;
+    padding: 10px 5px;
+}
+
+.spaced-between{
+    justify-content: space-between;
+}
+
+.form-row-fill {
+    width: 100%;
+}
+
+.form-row-fill input{
+    display: block;
+    width: 100%;
+}
+
+.form-contact-field{
+    display: flex;
+}
+
+.form-big-row > * {
+    height: 70px;
+}
+
+select, input{
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0);
+    padding: 5px 10px;
+}
+
+.resume-field{
+    border: 1px solid white;
+    line-height: 4rem;
+    padding: 0px 0px 0px 10px;
+}
+
+.resume-field::file-selector-button{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    border-radius: 5px;
+    border: none;
+    width: 20%;
+    background-color: rgb(81, 85, 92);
+    color:white;
+    border-left: 1px solid white;
+}
+
 
 @media only screen and (max-width: 700px) {
     .nav {
@@ -200,6 +284,10 @@ html {
     }
 
     .content {
+        flex-direction: column;
+    }
+
+    .is-column-flex-on-shrink{
         flex-direction: column;
     }
 
