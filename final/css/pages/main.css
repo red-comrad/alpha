@@ -22,11 +22,11 @@ html {
 }
 
 .container {
+  border: none;
   position: relative;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid white;
   padding: 0px 5%;
   z-index: 1;
 }
@@ -47,7 +47,12 @@ html {
   justify-content: center;
 }
 .container .content .content-text .content-text-row .content-text-row-card {
-  padding: 1.5em;
+  display: flex;
+  justify-content: right;
+}
+.container .content .content-text .content-text-row .content-text-row-card .content-text-row-card-sub-card {
+  width: 200px;
+  aspect-ratio: 1/1;
 }
 .container .content img {
   width: 100%;
@@ -55,6 +60,18 @@ html {
 .container .thin {
   flex-basis: 0;
   flex-grow: 0.2;
+}
+.container .banner img {
+  width: 100%;
+}
+
+.make-flex-grow .content-text-row-card {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.no-fix-height {
+  min-height: 0px !important;
 }
 
 .massive {
@@ -131,6 +148,10 @@ html {
 
 .bg-yellowish {
   background-color: #FAAF41;
+}
+
+.bg-off-grey {
+  background-color: #555F64;
 }
 
 .shape-lower-triangle {
@@ -213,36 +234,39 @@ html {
 
 .form-row {
   display: flex;
-  padding: 10px 5px;
+  padding: 10px 0px 0px 0px;
+}
+
+.form-row > * {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin: 5px;
 }
 
 .spaced-between {
   justify-content: space-between;
 }
 
-.form-row-fill {
-  width: 100%;
-}
-
-.form-row-fill input {
-  display: block;
-  width: 100%;
-}
-
 .form-contact-field {
   display: flex;
 }
 
-.form-big-row > * {
-  height: 70px;
+.form-contact-field input {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-left: 5px;
+}
+
+.form-big-row {
+  height: 100px;
 }
 
 select, input {
-  font-size: 1.4rem;
   color: white;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0);
   padding: 5px 10px;
+  font-size: 1.2rem;
 }
 
 .resume-field {
@@ -262,6 +286,23 @@ select, input {
   background-color: rgb(81, 85, 92);
   color: white;
   border-left: 1px solid white;
+}
+
+.trademark {
+  position: absolute;
+  transform-origin: bottom left;
+  transform: translate(100%, 0px) rotate(-90deg);
+  bottom: 0px;
+  right: 0px;
+  white-space: nowrap;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 150px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 @media only screen and (max-width: 700px) {
