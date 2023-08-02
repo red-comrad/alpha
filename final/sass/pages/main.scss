@@ -79,12 +79,13 @@ html {
                         width: 200px;
                         padding-left: 30px;
                         aspect-ratio: 1/1;
-                        border: 1px solid black;
+                        border: 1px solid rgb(189, 189, 189);
                         .index{
                             position: absolute;
-                            top: 0;
-                            left: 0;
+                            top: 10px;
+                            left: 10px;
                             text-decoration: underline;
+                            color: rgb(189, 189, 189);
                         }
                     }
                 }
@@ -98,10 +99,14 @@ html {
         flex-basis: 0;
         flex-grow: 0.2;
     }
-    .banner{
-        img{
-            width: 100%;
-        }
+}
+
+.banner{
+    img{
+        width: 100%;
+        aspect-ratio: 1/0.2;
+        object-fit: cover;
+        object-position: 0px 60%;
     }
 }
 
