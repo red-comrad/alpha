@@ -79,6 +79,7 @@ html {
                         width: 200px;
                         padding-left: 20px;
                         aspect-ratio: 1/1;
+                        transition: 200ms;
                         border: 1px solid rgb(189, 189, 189);
                         .index{
                             position: absolute;
@@ -87,6 +88,12 @@ html {
                             text-decoration: underline;
                             color: rgb(189, 189, 189);
                         }
+                    }
+
+                    .content-text-row-card-sub-card:hover{
+                        background-color: black;
+                        color: white;
+                        transition: 200ms;
                     }
                 }
             }
@@ -187,6 +194,20 @@ html {
     border-color: #3787C8 !important;
 }
 
+.is-hover-bluish, .is-hover-yellowish{
+    transition-duration: 200ms;
+}
+
+.is-hover-yellowish:hover{
+    color: #FAAF41;
+    transition-duration: 200ms;
+}
+
+.is-hover-bluish:hover{
+    color: #3787C8;
+    transition-duration: 200ms;
+}
+
 .before-line:before{
     content: "";
     border-bottom: 2px solid #E14B32;
@@ -227,6 +248,10 @@ html {
 
 .bg-off-grey{
     background-color: #555F64;
+}
+
+.bg-bluish{
+   background-color: #3787C8;
 }
 
 .border-bluish{
