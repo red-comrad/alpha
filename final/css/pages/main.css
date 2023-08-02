@@ -28,7 +28,8 @@ html {
   display: flex;
   flex-direction: column;
   padding: 0px 5%;
-  z-index: 1;
+  z-index: -1;
+  overflow: hidden;
 }
 .container .content {
   display: flex;
@@ -55,6 +56,7 @@ html {
   width: 200px;
   text-align: center;
   aspect-ratio: 1/1;
+  border: 1px solid black;
 }
 .container .content .content-text .content-text-row .content-text-row-card .content-text-row-card-sub-card .index {
   position: absolute;
@@ -73,8 +75,16 @@ html {
   width: 100%;
 }
 
+.is-not-flex {
+  height: 1em !important;
+}
+
 .is-child-spaced-evenly {
   justify-content: space-evenly !important;
+}
+
+.is-content-text-top-aling {
+  justify-content: start !important;
 }
 
 .make-flex-grow .content-text-row-card {
@@ -121,12 +131,17 @@ html {
   font-size: 1.2rem;
 }
 
+.info {
+  font-family: "Proxima Nova";
+}
+
 .shape {
   margin: 5px;
 }
 
 .before-line {
   width: max-content;
+  padding: 20px 0px;
 }
 
 .color-border-blue:before {
@@ -148,8 +163,7 @@ html {
 .shape-circle {
   position: absolute;
   display: inline-block;
-  min-height: 100px;
-  max-height: 100px;
+  height: 100px;
   top: -50px;
   left: -50px;
   aspect-ratio: 1/1;
@@ -183,6 +197,11 @@ html {
   border-top: 20px solid transparent;
 }
 
+.is-left-right-padded-70 {
+  padding-left: 15% !important;
+  padding-right: 15% !important;
+}
+
 .shape-square-line-inmiddle {
   position: relative;
   display: inline-block;
@@ -212,6 +231,7 @@ html {
 }
 .header .nav {
   display: flex;
+  padding-top: 10px;
 }
 .header .nav .nav-element {
   padding: 5px 10px;
@@ -295,27 +315,12 @@ select, input {
   color: white;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0);
-  padding: 5px 10px;
+  padding: 10px 2px;
   font-size: 1.2rem;
 }
 
-.resume-field {
-  border: 1px solid white;
-  line-height: 4rem;
-  padding: 0px 0px 0px 10px;
-}
-
-.resume-field::file-selector-button {
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  float: right;
-  border-radius: 5px;
-  border: none;
-  width: 20%;
-  background-color: rgb(81, 85, 92);
-  color: white;
-  border-left: 1px solid white;
+form {
+  min-width: fit-content;
 }
 
 .trademark {
@@ -331,10 +336,14 @@ select, input {
   padding: 5px;
 }
 
+.margin-top-10 {
+  margin-top: 20px;
+}
+
 .footer {
   background-color: black;
   color: white;
-  height: 150px;
+  height: 100px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -357,6 +366,12 @@ select, input {
   }
   .is-center-on-shrink > * {
     text-align: center;
+  }
+  form {
+    width: 100%;
+  }
+  .is-left-right-padded-70 {
+    padding: 0px !important;
   }
 }
 
