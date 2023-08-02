@@ -23,7 +23,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    transition-duration: 1s;
 }
 
 html {
@@ -50,8 +49,8 @@ html {
 .container {
     border: none;
     position: relative;
-    min-height: 80vh;
     display: flex;
+    min-height: 80vh;
     flex-direction: column;
     padding: 0px 5%;
     z-index: 0;
@@ -371,6 +370,7 @@ html {
 select, input{
     color: white;
     border-radius: 5px;
+    border: 1px solid rgb(216, 216, 216);
     background-color: rgb(0, 0, 0, 0);
     padding: 20px 10px;
     font-size: 1.2rem;
