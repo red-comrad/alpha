@@ -22,7 +22,7 @@ html {
 }
 
 .fuild-container {
-  z-index: -2;
+  z-index: -1;
 }
 
 .container {
@@ -311,7 +311,6 @@ html {
 .form-contact-field input {
   flex-basis: 0;
   flex-grow: 1;
-  margin-left: 5px;
 }
 
 .form-big-row {
@@ -322,7 +321,7 @@ select, input {
   color: white;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0);
-  padding: 20px 2px;
+  padding: 20px 10px;
   font-size: 1.2rem;
 }
 
