@@ -77,7 +77,7 @@ html {
                     justify-content: space-evenly;
                     .content-text-row-card-sub-card{
                         width: 200px;
-                        padding-left: 30px;
+                        padding-left: 20px;
                         aspect-ratio: 1/1;
                         border: 1px solid rgb(189, 189, 189);
                         .index{
@@ -278,6 +278,7 @@ html {
 
     .logo {
         img{
+            position: absolute;
             width: 150px;
             transform: rotate(-30deg);
         }
@@ -286,7 +287,6 @@ html {
     .nav {
         display: flex;
         padding-top: 10px;
-
         .nav-element {
             padding: 5px 10px;
             text-align: right;

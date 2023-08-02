@@ -75,7 +75,7 @@ html {
 }
 .container .content .content-text .content-text-row .content-text-row-card .content-text-row-card-sub-card {
   width: 200px;
-  padding-left: 30px;
+  padding-left: 20px;
   aspect-ratio: 1/1;
   border: 1px solid rgb(189, 189, 189);
 }
@@ -261,6 +261,7 @@ html {
   justify-content: space-between;
 }
 .header .logo img {
+  position: absolute;
   width: 150px;
   transform: rotate(-30deg);
 }
