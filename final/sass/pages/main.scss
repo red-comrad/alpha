@@ -77,7 +77,7 @@ html {
                     justify-content: space-evenly;
                     .content-text-row-card-sub-card{
                         width: 200px;
-                        text-align: center;
+                        padding-left: 30px;
                         aspect-ratio: 1/1;
                         border: 1px solid black;
                         .index{
@@ -194,7 +194,6 @@ html {
 
 .shape-circle {
     position: absolute;
-    display: inline-block;
     height: 100px;
     top: -50px;
     left: -50px;
@@ -202,6 +201,12 @@ html {
     background-color: #E14B32;
     border-radius: 50%;
     z-index: -1;
+}
+
+.is-circle-small{
+    height: 50px;
+    top: -25px;
+    left: -25px;
 }
 
 .bg-gradient{
@@ -236,7 +241,6 @@ html {
 
 .shape-square-line-inmiddle {
     position: relative;
-    display: inline-block;
     min-height: 40px;
     max-height: 40px;
     aspect-ratio: 1/1;
@@ -253,6 +257,13 @@ html {
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
+.shape-square-line-inmiddle-mirror{
+
+}
+
+.shape-square-line-inmiddle-mirror:after{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
 
 .header {
     display: flex;
