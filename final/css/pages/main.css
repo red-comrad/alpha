@@ -21,6 +21,10 @@ html {
   color: black;
 }
 
+.fuild-container {
+  z-index: -2;
+}
+
 .container {
   border: none;
   position: relative;
@@ -28,8 +32,10 @@ html {
   display: flex;
   flex-direction: column;
   padding: 0px 5%;
-  z-index: -1;
+  z-index: 0;
   overflow: hidden;
+  max-width: 1400px;
+  margin: auto;
 }
 .container .content {
   display: flex;
@@ -316,7 +322,7 @@ select, input {
   color: white;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0);
-  padding: 10px 2px;
+  padding: 20px 2px;
   font-size: 1.2rem;
 }
 
@@ -329,7 +335,7 @@ form {
   transform-origin: bottom left;
   transform: translate(100%, 0px) rotate(-90deg);
   bottom: 0px;
-  right: 0px;
+  right: -10px;
   white-space: nowrap;
 }
 
