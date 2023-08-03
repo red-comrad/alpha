@@ -47,11 +47,12 @@ html {
 .fuild__container {
   background-image: url(resources/bg.jpg);
   background-size: cover;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .container {
-  max-width: 1400px;
-  margin: auto;
+  max-width: 1600px;
   min-height: 100vh;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -112,16 +113,6 @@ button {
   width: 300px;
 }
 
-@media screen and (max-width: 700px) {
-  .container__body {
-    flex-direction: column;
-  }
-  .is--rowonshrink {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 30px;
-  }
-}
 .shape--hollowtriangle {
   position: relative;
   top: -5px;
@@ -134,6 +125,21 @@ button {
   transform: rotate(135deg);
   margin-right: 0.4em;
   margin-left: 1em;
+}
+
+@media screen and (max-width: 700px) {
+  .container__body {
+    flex-direction: column;
+  }
+  .container__body__content .padded {
+    padding: 0px 10%;
+    padding-top: 40px;
+  }
+  .is--rowonshrink {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
