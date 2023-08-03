@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+.is--absolute {
+    position: absolute;
+}
+
+.is--relative {
+    position: relative;
+}
+
+.is--right {
+    right: 0px;
+}
+
+.is--bottom {
+    bottom: 0px;
+}
+
+.text--verticalcenter {
+    margin: auto;
+}
+
+.font--massive {
+    font-size: 4.5rem;
+}
+
+.font--medium {
+    font-size: 3rem;
+}
+
+.font--grey {
+    color: rgb(163, 163, 163);
+}
+
+.lime {
+    color: rgb(127, 228, 44);
+}
+
+.fuild__container {
+    background-image: url(resources/bg.jpg);
+    background-size: cover;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+
+    .container__header {
+        display: flex;
+        justify-content: space-between;
+
+        .container__header__nav {
+            display: flex;
+
+            .container__header__nav__hamburger {
+                width: 50px;
+                padding: 0px 10px;
+
+                hr {
+                    border-top: 3px;
+                    color: white;
+                    margin: 33% 0px;
+                }
+            }
+        }
+    }
+
+    .container__body {
+        display: flex;
+
+        .container__body__content {
+            flex: 1;
+
+            .content__body__content__row {
+                padding-top: 60px;
+            }
+        }
+
+        .padded {
+            padding: 0px 20%;
+            padding-top: 40px;
+        }
+
+        .thin {
+            max-width: 48px;
+        }
+    }
+
+    .container__footer {
+        display: flex;
+        justify-content: right;
+        padding-top: 30px;
+
+        .container__footer__dropdown {
+            border-right: 3px solid rgb(127, 228, 44);
+            padding-right: 10px;
+        }
+    }
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 300px;
+}
+
+@media screen and (max-width: 700px) {
+    .container__body {
+        flex-direction: column;
+    }
+
+    .is--rowonshrink {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 30px;
+    }
+}
+
+.shape--hollowtriangle {
+    position: relative;
+    top: -5px;
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-right: 0.2em solid rgb(127, 228, 44);
+    border-top: 0.2em solid rgb(127, 228, 44);
+    transform: rotate(135deg);
+    margin-right: 0.4em;
+    margin-left: 1.0em;
+}
